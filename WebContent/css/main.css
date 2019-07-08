@@ -1,0 +1,157 @@
+*{
+    margin:0px;
+    font-family:圆体;
+
+}
+.mdiv1{
+	height:90px;
+    background-color:white;
+    border-bottom:1px solid rgb(230, 236, 248);
+}
+.mdiv1 li{
+	float: left;
+    list-style: none;
+    padding-top:55px;
+}
+.mdiv1 li a{
+    vertical-align: middle;
+    
+}
+.mdiv1 li a:hover {
+    color: rgb(125, 188, 224);
+}
+.mfont1{
+	font-size:15px;
+    font-family:Arial;
+    padding-left:70px;
+    color:black;
+}
+.mfont2{
+    font-size:13px;
+    font-family:"Arial";
+    padding-left:20px;
+    color:rgb(41, 103, 165);
+    text-decoration-line: none;
+}
+.box {
+	margin-left:20px;
+	margin-right:0px; 
+	padding-left:0px;
+	margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width:100%
+}
+.div5{
+    /* padding-left: 100px; */
+    height:150px;
+    background-color:  rgb(255, 255, 255);
+}
+.div5 li {
+    float: left;
+    list-style: none;
+}
+.div5 a img{
+    height:150px;
+    width:120px;
+}
+.div6{
+    height:30px;
+    padding-left: 10px;
+    background-color:  rgb(255, 255, 255);
+}
+.div6 li {
+    float: left;
+    list-style: none;
+    width:165px;
+    display:block;
+    overflow:hidden;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.div6 a{
+    font-size:14px;
+    font-family:"Arial";
+    vertical-align: middle;
+    text-decoration-line: none;
+    color:black;
+}
+
+.div7{
+    height:30px;
+    padding-left: 10px;
+    background-color:  rgb(255, 255, 255);
+}
+.div7 li {
+    float: left;
+    list-style: none;
+    width:165px;
+    display:block;
+    overflow:hidden;
+    word-break:keep-all;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.div7 a{
+    font-size:15px;
+    font-family:"Arial";
+    vertical-align: middle;
+    text-decoration-line: none;
+    color:black;
+}
+.divbutton{
+    height:60px;
+    padding-left: 45px;
+    background-color:  rgb(255, 255, 255);
+}
+.divbutton li{
+    float: left;
+    list-style: none;
+    width:165px;
+    padding-left: 3px;
+}
+.button {
+    background-color: rgb(255, 255, 255); /* Green */
+    border: none;
+    height:20px;
+    width:75px;
+    color: white;
+    padding-top:3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.button1 {
+    background-color:#268DCD; 
+    color: white; 
+    border:1px solid rgb(199, 192, 192);
+}
+
+.button1:hover {
+    background-color: rgb(73, 94, 126);
+    color:white;
+}
+.mdiv2{
+	height:50px;
+    background-color:white;
+    border-bottom:1px solid rgb(230, 236, 248);
+}
+.mdiv2 li{
+	float: left;
+    list-style: none;
+    padding-top:20px;
+}
+.mdiv2 li a{
+    vertical-align: middle;
+    
+}
+.mdiv2 li a:hover {
+    color: rgb(125, 188, 224);
+}

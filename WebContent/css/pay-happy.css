@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    font-family:圆体;
+}
+.pdiv1{
+    height:100px;
+    background-color:rgb(186, 207, 186);
+    border-bottom:1px solid rgb(186, 207, 186);
+}
+.pdiv1 a {
+    vertical-align: middle;
+    text-decoration-line: none;
+    color:rgb(255, 255, 255);
+    font-family:"Cursive";
+}
+.pdiv2{
+    height:400px;
+}
+.pdiv2 li{
+    float: left;
+    list-style: none;
+    padding-right: 20px;
+    margin-left:0px;
+}
+.zfont1{
+    font-size:40px;
+    font-weight:500;
+    font-family:"Cursive";
+    padding-top:30px;
+    padding-left:110px;
+    color:rgb(255, 255, 255);
+}
+.zfont2{
+    font-size:15px;
+    font-family:"Cursive";
+    color:rgb(255, 255, 255);
+}
+.zimg1{
+    height:150px;
+    width:120px;
+}

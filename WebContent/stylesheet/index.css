@@ -1,0 +1,278 @@
+
+
+.topliang{
+    background-color:rgba(20, 21, 23, 0.71);
+    width:100%;
+    height:23px;
+    margin:0px;
+    padding:0px;
+    position: fixed;
+    top:0;
+    left:0;
+    font-size: 13px;
+}
+
+.topliang li {
+    float: left;
+    list-style: none;
+    padding-right: 20px;
+    margin-left:0px;
+}
+
+.righttop{
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+}
+
+*{
+    margin:0px;
+}
+.header1{
+    width: 100%;
+	height:80px;
+    /* display:flex; */
+    /* flex-direction:row; */
+    /* background-image:url("./image/headerbackground.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;   */
+    background-color:rgb(244, 248, 255);
+    border-bottom:1px solid rgb(230, 236, 248);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.doudoufont{
+    font-size:28px;
+    font-weight:700;
+    font-family:"Arial";
+    padding-top:7px;
+    padding-left:113px;
+    background-color: rgb(245, 249, 255);
+    color:rgb(42, 115, 187);
+}
+
+.header2{
+    margin:0px;
+	height:40px;
+    background-color:rgb(244, 248, 255);
+}
+.header2 li {
+    float: left;
+    list-style: none;
+    padding-right: 25px;
+    margin-left:70px;
+}
+.header2 a{
+    padding-bottom: 5px;
+    vertical-align: middle;
+    text-decoration-line: none;
+    color:rgb(41, 103, 165);
+}
+
+.font3{
+    font-size:15px;
+    font-family:"Arial";
+    padding-top:5px;
+    color:rgb(41, 103, 165);
+}
+
+
+.divsort li a:hover {
+    color: rgb(72, 120, 165);
+}
+
+div.searchbar{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url("../img/searchbar.png");
+}
+
+div.topflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+a{
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+}
+
+img.movie{
+    border:0;
+    width: 100px;
+    height: 100px;
+    margin-top: 60px;
+    margin-left: 35px;
+    margin-right:35px;
+    padding: 1px;
+    margin-bottom: 0px !important;
+}
+
+.horiflex{
+    display: flex;
+    flex-direction: row;
+}
+
+.vertiflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.three-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.left{
+    width: 20%; 
+}
+
+.mid{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    width: 20%;
+}
+
+
+
+
+
+img[alt]{
+    width:100%;
+        
+}
+
+
+
+.filmreview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.two-flex{
+    margin: 30px;
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.twoflex-left{
+    width:20%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.twoflex-right{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.film-content{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    word-wrap:break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+
+.MyOwnPage{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.MyOwnPageLeft{
+    width:10%;
+}
+
+.MyOwnPageCenter{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MyOwnPageRight{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.mySelect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-start;
+    width: 100%;
+    background-color:rgb(244, 248, 255);
+}
+
+button{
+    background: rgba(255,255,255,0.2);
+    cursor: pointer;
+    border: 0px;
+    margin-left: 120px;
+    text-align: center;
+    height: 30px;
+}
+
+div[class='mySelect']>button{
+    color:rgb(41, 103, 165);
+}
+
+
+
+.a1{
+    color: rgb(196, 196, 196);
+    text-decoration: none;
+}
+.a1:hover{
+	color:white;
+}
+
+.operatePage{
+    width: 100%;
+}
+.sub{
+	background: #FFF;
+	border: 1px solid #CCC;
+	color: #333;
+	border-radius: 4px;
+	margin-left:35%;
+	height: 30px;
+}
+.sub:hover{
+	color: #333;
+	background-color: #F4F4F4;
+	border-color: #ADADAD;
+}

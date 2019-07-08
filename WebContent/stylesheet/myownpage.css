@@ -1,0 +1,71 @@
+/*myinfo page*/
+
+
+.myinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.image{
+    margin: 10px;
+    width: 30%;
+    margin-top: 90px;
+}
+
+.text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+div[style="font-size:115%;"]:hover{
+    font-size: 120%;
+}
+
+.text-content{
+    margin-top:20px;
+}
+
+div[class="myinfo"] input{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+input[id="submit"]{
+    width: 50%;
+    align-self: center;
+    margin-left: 25%;
+}
+
+p[id="password1"]:before{
+    content: "请输入新的密码";
+    color:#585858;
+}
+p[id="password2"]:before{
+    content: "请再次输入";
+    color:#585858;
+}
+
+/*myfilmreview page*/
+.myflimreview{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+
+.filmimage{
+    width: 11%;
+    margin-right: 30px;
+}
+
+.filmcontent{
+    width:40%;
+    margin-right: 30px;
+}
+

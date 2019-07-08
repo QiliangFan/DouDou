@@ -1,0 +1,64 @@
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*货物*/
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.image{
+    width: 30% !important;
+    margin-top: 20px !important;
+}
+
+.adjust{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mybutton{
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+.purchase{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.invest{
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+button[class="buy"],button[class="invest"]{
+    background-color: rgb(78, 159, 235);
+    width: 100px;
+    height:30px;
+    font-weight: bolder;
+    color: white
+}

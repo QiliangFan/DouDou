@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>DouDou</display-name>
+  <welcome-file-list>
+    <welcome-file>main.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 设置index页面启动时影评的获取 -->
+  <servlet>  
+  <servlet-name>DouDou.FilmReview</servlet-name>
+  <servlet-class>DouDou.FilmReview</servlet-class>
+  <load-on-startup>2</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DouDou.FilmReview</servlet-name>
+  	<url-pattern>/SERVLET/filmreview</url-pattern>
+  </servlet-mapping>
+  
+ <listener>
+ 	<listener-class>MyListener.HistoryLook</listener-class>
+ </listener>
+<listener>
+	<listener-class>MyListener.DBclose</listener-class>
+</listener>
+<listener>
+	<listener-class>MyListener.SessionLifeStyle</listener-class>
+</listener>
+ <session-config>
+ 	<session-timeout>30000</session-timeout>
+ </session-config>
+
+<filter>
+	<filter-name>canIuse</filter-name>
+	<filter-class>myfilter.canIuse</filter-class>
+</filter>
+<filter-mapping>
+	<filter-name>canIuse</filter-name>
+	<url-pattern>/managerfind.jsp</url-pattern>
+</filter-mapping>
+</web-app>

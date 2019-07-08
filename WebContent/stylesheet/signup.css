@@ -1,0 +1,37 @@
+
+
+.main{
+   margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.threeflex{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.left{
+    width:25%;
+    background-color: rgb(75, 91, 238);
+}
+.center{
+    width:50%;
+    background-color: rgb(205, 63, 218);
+}
+.right{
+    width: 25%;
+    background-color: aqua;
+}
+
+
+.image{
+    height: 100%;
+    width: 100%;
+   
+}
+
+input{
+    margin-bottom:20px;
+}

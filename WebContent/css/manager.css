@@ -1,0 +1,25 @@
+@charset "UTF-8";
+*{
+    margin:0px;
+    font-family:鍦嗕綋;
+}
+.pdiv1{
+    height:1000px;
+    width:100%;
+    background-color:rgb(186, 207, 186);
+    border-bottom:1px solid rgb(186, 207, 186);
+}
+.pdiv1 a {
+    vertical-align: middle;
+    text-decoration-line: none;
+    color:rgb(255, 255, 255);
+    font-family:"Cursive";
+}
+.zfont1{
+    font-size:40px;
+    font-weight:500;
+    font-family:"Cursive";
+    padding-top:30px;
+    padding-left:110px;
+    color:rgb(255, 255, 255);
+}
