@@ -55,14 +55,14 @@
 							<c:if test="${s.index%2==0 }">
 								<div class="haveleft">
 									<a style href="javascript:void(0)" onclick="convey(this,'${sessionScope.email}')" name="${sessionScope.movie[s.index] }"><img style="width:25%;align-self:center;" src="./img/${item}" alt="?"/></a>
-									<a name="movieName"  href="javascript:void(0)" style="color: black;"> ${sessionScope.movie[s.index] }</a>				
+									<a name="movieName"  href="javascript:void(0)" style="color: black;margin-bottom:25px;margin-top:5px;font-size:14px;"> ${sessionScope.movie[s.index] }</a>				
 								</div>
 							</c:if>
 								
 								<c:if test="${s.index%2==1	 }">
 									<div class="haveright">
-										<img style="width:25%;align-self:center;" src="./img/${item}" alt="?"/>
-										<a href="javascript:void(0)" onclick="convey(this,'${sessionScope.email}')" name="${sessionScope.movie[s.index] }" style="color: black;"> ${sessionScope.movie[s.index] }</a>
+										<a style href="javascript:void(0)" onclick="convey(this,'${sessionScope.email}')" name="${sessionScope.movie[s.index] }"><img style="width:25%;align-self:center;" src="./img/${item}" alt="?"/></a>
+										<a href="javascript:void(0)" onclick="convey(this,'${sessionScope.email}')" name="${sessionScope.movie[s.index] }" style="color: black;margin-bottom:25px;margin-top:5px;font-size:14px;"> ${sessionScope.movie[s.index] }</a>
 									</div>
 								</c:if>
 							

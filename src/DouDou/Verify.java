@@ -3,10 +3,7 @@ package DouDou;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.security.MessageDigest;
-import java.sql.Connection;
 import java.sql.*;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -45,16 +42,6 @@ public class Verify extends HttpServlet {
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
 		super.init(config);
-		this.config = config;
-		try {
-			Class.forName("DouDou.sqlconnect");
-			DouDou.sqlconnect.init();
-			con=DouDou.sqlconnect.con;
-		} catch (ClassNotFoundException | SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
 	}
 
 	/**
@@ -80,6 +67,12 @@ public class Verify extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		try {
+			con=DriverManager.getConnection("jdbc:mysql://106.14.142.29/DouDou?useSSL=true","javaweb","fanqiliang");
+		} catch (SQLException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
 		request.getSession();
 		if (request.getParameter("signup") != null) {
 			response.setContentType("text/html");
@@ -186,6 +179,12 @@ public class Verify extends HttpServlet {
 				response.sendRedirect("main.jsp");
 			}
 			
+		}
+		try {
+			con.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	

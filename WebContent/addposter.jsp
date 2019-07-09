@@ -10,12 +10,12 @@ import="service.PosterService,serviceimp.PosterServiceImp,vo.Poster,java.util.Li
 <title>addposter</title>
 </head>
 <body>
-<p style="font-size:25px; color:#666; margin-left:20px;">Movie</p><hr/>
+<p style="font-size:25px; color:#666; margin-left:20px;">Poster</p><hr/>
     <form action="PosterServlet" method="post" class="bootstrap-frm">
-    海报名：<input type="text" name="picturename" ><br>
-    存储名：<input type="text" name="image_address" ><br>
-    电影名:<input type="text" name="movieName" ><br>
-    <input type="submit" value="提交" class="sub">
+	   海报名：<input type="text" name="picturename" ><br>
+	   存储名：<input type="text" name="image_address" ><br>
+	   电影名:<input type="text" name="movieName" ><br>
+	   <input type="submit" value="提交" class="sub">
     </form>
 </body>
 </html>

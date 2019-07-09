@@ -38,7 +38,12 @@ public class HistoryLook implements ServletRequestListener {
      */
     public void requestInitialized(ServletRequestEvent sre)  { 
          // TODO Auto-generated method stub
-    	con=sqlconnect.con;
+    	try {
+			con=DriverManager.getConnection("jdbc:mysql://106.14.142.29/DouDou?useSSL=true","javaweb","fanqiliang");
+		} catch (SQLException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
     	try {
 			sre.getServletRequest().setCharacterEncoding("utf-8");
 		} catch (UnsupportedEncodingException e1) {
@@ -108,6 +113,12 @@ public class HistoryLook implements ServletRequestListener {
 				e.printStackTrace();
 			}
     	}
+    	try {
+			con.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 	
 }

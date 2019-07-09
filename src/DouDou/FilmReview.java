@@ -2,6 +2,7 @@ package DouDou;
 
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -34,9 +35,8 @@ public class FilmReview extends HttpServlet {
 
 	public void init(ServletConfig config) throws ServletException {
 		try {
-			Class.forName("DouDou.sqlconnect");
-			con=DouDou.sqlconnect.con;
-		} catch (ClassNotFoundException e) {
+			con=DriverManager.getConnection("jdbc:mysql://106.14.142.29/DouDou?useSSL=true","javaweb","fanqiliang");
+		} catch ( SQLException e) {
 			e.printStackTrace();
 		}
 		try {
@@ -58,6 +58,12 @@ public class FilmReview extends HttpServlet {
 				Myfilmreview.add(temp);
 			}
 			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			con.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

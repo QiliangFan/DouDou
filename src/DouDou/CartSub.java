@@ -2,6 +2,7 @@ package DouDou;
 
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -46,6 +47,12 @@ public class CartSub extends HttpServlet {
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try {
+			con=DriverManager.getConnection("jdbc:mysql://106.14.142.29/DouDou?useSSL=true","javaweb","fanqiliang");
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
@@ -65,6 +72,12 @@ public class CartSub extends HttpServlet {
 			ps.executeUpdate();
 			if(i==1) System.out.print(email+"的"+movieName+"数量成功减一");
 			response.sendRedirect("MyCart");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			con.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

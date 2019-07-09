@@ -3,7 +3,6 @@ package DouDou;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
-import java.sql.SQLException;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -37,14 +36,6 @@ public class search extends HttpServlet {
 	 */
 	public void init(ServletConfig config) throws ServletException {
 		super.init(config);
-		try {
-			DouDou.sqlconnect.init();
-			Class.forName("DouDou.sqlconnect");
-			con=DouDou.sqlconnect.con;
-		} catch (ClassNotFoundException | SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 	}
 
@@ -64,6 +55,12 @@ public class search extends HttpServlet {
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try {
+			con=DriverManager.getConnection("jdbc:mysql://106.14.142.29/DouDou?useSSL=true","javaweb","fanqiliang");
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		System.out.println("start to search!");
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html");
@@ -94,6 +91,12 @@ public class search extends HttpServlet {
 		}
 		response.sendRedirect("SearchResult.jsp");
 		out.close();
+		try {
+			con.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
